@@ -44,12 +44,12 @@
             width: 1200px;
         }
         
-        .silex-id-1502279753055-3 {
-            width: 400px;
+        .silex-id-1502280858640-6 {
             height: 400px;
+            width: 400px;
             background-color: transparent;
-            top: 119px;
-            left: 257px;
+            top: 44px;
+            left: 202px;
         }
         
         .silex-id-1478366450713-3 {
@@ -73,7 +73,7 @@
     </style>
     <title></title>
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621033-3":{"top":"5px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-3":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1502279753055-3":{"width":"400px","height":"400px","background-color":"transparent","top":"119px","left":"257px"}},"mobile":{},"componentData":{"silex-id-1502279753055-3":{"name":"form1","templateName":"form","submitButtonLabel":"Submit"}}}]
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621033-3":{"top":"5px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-3":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1502280831755-5":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1502280858640-6":{"height":"400px","width":"400px","background-color":"transparent","top":"100px","left":"308px"}},"mobile":{},"componentData":{"silex-id-1502280858640-6":{"name":"slideshow1","templateName":"slideshow"}}}]
     </script>
 
 
@@ -100,6 +100,8 @@
             display: inherit;
         }
     </style>
+    <script src="/static/2.7/unslider/unslider-min.js" data-silex-static="" data-dependency=""></script>
+    <link rel="stylesheet" href="/static/2.7/unslider/unslider.css" data-silex-static="" data-dependency="">
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
 </head>
@@ -126,88 +128,158 @@
     </div>
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element" data-silex-id="silex-id-1474394621033-3" style="">
         <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
-            <div data-silex-type="html" class="editable-style silex-id-1502279753055-3 html-element silex-component silex-component-form silex-use-height-not-minheight" data-silex-id="silex-id-1502279753055-3">
+            <div data-silex-type="html" class="editable-style silex-id-1502280858640-6 html-element silex-component silex-component-slideshow silex-use-height-not-minheight" data-silex-id="silex-id-1502280858640-6">
                 <div class="silex-element-content">
-                    <form id="id_1502279769820_169" action="https://formspree.io/your@email.com" method="POST">
+                    <div id="parent_1502280858641_442">
+                        <!-- preview -->
+                        <div class="prodotype-preview">
 
-                        <div>
-                            <label for="field1">Name</label>
-                            <input type="text" required="" id="field1" name="field1" placeholder="Your name">
                         </div>
+                        <div id="id_1502280858641_442">
+                            <!-- runtime -->
+                            <!-- the whole slideshow -->
+                            <ul class="prodotype-runtime">
 
-
-                        <div>
-                            <label for="field2">Your email adress</label>
-                            <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+                            </ul>
                         </div>
-
-
-                        <div class="fill-vertical">
-                            <label for="field3">Your message</label>
-                            <textarea required="" id="field3" name="field3" placeholder="What you have to say"></textarea>
-                        </div>
-
-                        <input type="submit" value="Submit">
-                    </form>
-                    <style>
-                        #id_1502279769820_169 input[type=text],
-                        select {
+                    </div>
+                    <style type="text/css">
+                        /* *********************** */
+                        /* "Preview" label always on top of the slideshow in silex */
+                        
+                        #parent_1502280858641_442 .prodotype-preview {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        #parent_1502280858641_442 .prodotype-preview .preview-text {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        #parent_1502280858641_442 .prodotype-preview .preview-text p {
+                            z-index: 1;
+                            background-color: black;
+                            color: white;
+                        }
+                        /* *********************** */
+                        /* styles for each slide */
+                        /* *********************** */
+                        /* styles for all the slides */
+                        
+                        #parent_1502280858641_442 .slide-image {
                             width: 100%;
-                            padding: 12px 20px;
-                            margin: 8px 0;
+                            display: flex;
+                            justify-content: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 50%;
+                            align-items: flex-end;
+                            justify-content: center;
+                        }
+                        
+                        #parent_1502280858641_442 figcaption {
+                            padding: 50px;
+                            color: white;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            width: 100%;
+                            text-align: center;
+                        }
+                        /* *********************** */
+                        /* UI style */
+                        
+                        #parent_1502280858641_442 .unslider-nav {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 0;
+                            right: 0;
+                            top: auto;
+                            margin: 0;
+                        }
+                        
+                        #parent_1502280858641_442 .unslider-nav ol {
+                            text-align: center;
+                        }
+                        
+                        #parent_1502280858641_442 .unslider-nav ol li.unslider-active {
+                            background: #fff;
+                            cursor: default;
+                            opacity: 1;
+                        }
+                        
+                        #parent_1502280858641_442 .unslider-nav ol li {
                             display: inline-block;
-                            border: 1px solid #ccc;
-                            border-radius: 3px;
-                            box-sizing: border-box;
-                        }
-                        
-                        #id_1502279769820_169 input[type=submit] {
-                            width: 100%;
-                            background-color: #4CAF50;
-                            color: #FFFFFF;
-                            padding: 14px 20px;
-                            margin: 8px 0;
-                            border: 1px solid #4CAF50;
-                            border-radius: 3px;
+                            float: none;
+                            width: 6px;
+                            height: 6px;
+                            margin: 0 4px;
+                            padding: 3px;
+                            background: transparent;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            text-indent: -999em;
+                            border: 2px solid #fff;
                             cursor: pointer;
+                            opacity: .4;
                         }
                         
-                        #id_1502279769820_169 label {
-                            color: #000000;
+                        #parent_1502280858641_442 .unslider-arrow {
+                            display: block;
+                            width: 32px;
+                            height: 32px;
+                            top: 50%;
+                            right: 16px;
+                            left: auto;
+                            margin-top: -16px;
+                            overflow: hidden;
+                            background: rgba(0, 0, 0, .2) no-repeat 50% 50%;
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+                            background-size: 7px 11px;
+                            border-radius: 32px;
+                            text-indent: -999em;
+                            opacity: .6;
+                            transition: opacity .2s;
                         }
-                        /* *************************** */
-                        /* resize the 3rd field
-   and fill the vertical space */
                         
-                        #id_1502279769820_169 .fill-vertical {
-                            flex: 1 1 auto;
-                            display: flex;
-                            flex-direction: column;
+                        #parent_1502280858641_442 .unslider-arrow.prev {
+                            left: 16px;
+                            right: auto;
+                            -ms-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
                         }
-                        
-                        #id_1502279769820_169 .fill-vertical textarea {
-                            flex: 1 1 auto;
-                            width: 100%;
-                            height: 150px;
-                            padding: 12px 20px;
-                            box-sizing: border-box;
-                            border: 2px solid #ccc;
-                            border-radius: 3px;
-                            background-color: #f8f8f8;
-                            font-size: 16px;
-                            resize: none;
-                        }
-                        /* ************************ */
-                        
-                        #id_1502279769820_169 {
-                            border-radius: 3px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            height: 100%;
-                        }
+                        /* *********************** */
                     </style>
-
+                    <script type="text/javascript">
+                        (function() {
+                            function initUnslider() {
+                              // do not start in the editor (it would mess with the markup)
+                              if(!$('body').hasClass('silex-runtime')) return;
+                        
+                              var slider = $('#id_1502280858641_442').unslider({
+                                'autoplay': false,
+                                'speed': 750,
+                                'delay': 3000,
+                                'index': 0,
+                                'nav': true,
+                                'animation': 'horizontal',
+                                'arrows': true
+                              });
+                              //  Listen to slide changes
+                              
+                              // apply element height to the images
+                              var silexElement = $('#id_1502280858641_442').closest('.editable-style');
+                              var elementMinHeight = silexElement.css('height');
+                              var elementWidth = silexElement.css('width');
+                              $('#id_1502280858641_442 li .slide-image').css({
+                                'height': elementMinHeight
+                              });
+                              
+                          }
+                            initUnslider();
+                          })();
+                    </script>
                 </div>
             </div>
         </div>
